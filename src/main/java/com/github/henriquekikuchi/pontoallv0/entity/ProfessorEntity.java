@@ -15,8 +15,8 @@ import java.util.List;
 public class ProfessorEntity {
 
     @Id
-    @GeneratedValue(generator = "seq_generator", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name="seq_generator", sequenceName = "SEQ_PROFESSOR_ENTITY", initialValue = 6, allocationSize=1)
+    @GeneratedValue(generator = "seq_generator_professor", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name="seq_generator_professor", sequenceName = "SEQ_PROFESSOR_ENTITY", initialValue = 9, allocationSize=1)
     private long id;
 
     private String nome;
