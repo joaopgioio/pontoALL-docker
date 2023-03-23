@@ -30,4 +30,4 @@ spring:
        web-admin-password: password
 
 server: 
- port : 8085
+ port : 8082
