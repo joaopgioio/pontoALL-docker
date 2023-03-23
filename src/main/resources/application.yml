@@ -1,6 +1,8 @@
 spring:
   datasource:
     url: jdbc:h2:file:./database
+    #url: jdbc:h2:tcp:localhost/home/h2/~/database
+    #url: jdbc:h2:tcp://registropontoall.azurewebsites.net/~/database
     username: sa
     password: password
     driverClassName: org.h2.Driver
@@ -11,7 +13,6 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     generate-ddl: true
     show-sql: true
-    properties.hibernate.format_sql: true
     properties:
       hibernate:
         format_sql: true
@@ -25,6 +26,8 @@ spring:
       path: /h2-console
       settings:
        web-allow-others: true
+       trace: true
+       web-admin-password: password
 
-server:
-  port : 8082
+server: 
+ port : 8085
